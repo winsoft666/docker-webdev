@@ -5,6 +5,7 @@ services:
     restart: always
     ports:
       - "9443:443"
+      - "9080:80"
     environment:
       SERVER_NAME: www.xxx.com,xxx.com
       AUTH_TYPE: Basic

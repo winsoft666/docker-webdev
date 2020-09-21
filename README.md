@@ -42,7 +42,7 @@ services:
       - /srv/dav:/var/lib/dav
 ```
 
-> `./docker-compose.yml` is a example.
+> `./docker-compose.yml.sample` is a example.
 
 ### Secure WebDAV with SSL
 If you're happy with a self-signed SSL certificate, specify `-e SSL_CERT=selfsigned` and the container will generate one for you.
