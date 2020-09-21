@@ -1,0 +1,15 @@
+version: '3'
+services:
+  webdav:
+    build: .
+    restart: always
+    ports:
+      - "9443:443"
+    environment:
+      SERVER_NAME: www.xxx.com,xxx.com
+      AUTH_TYPE: Basic
+      SSL_CERT: selfsigned
+    volumes:
+      - /webdav-server:/var/lib/dav
+      - /root/webdav/user.passwd:/user.passwd
+
